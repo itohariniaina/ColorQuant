@@ -1,11 +1,11 @@
-# Quantize.Studio - Intelligent Image Optimization SaaS
+# ColorQuant - Intelligent Image Optimization SaaS
 
 ![Python](https://img.shields.io/badge/Python-3.9-blue?style=flat&logo=python)
 ![Docker](https://img.shields.io/badge/Docker-Enabled-2496ED?style=flat&logo=docker)
 ![Azure](https://img.shields.io/badge/Deployment-Azure-0078D4?style=flat&logo=microsoft-azure)
 ![Scientific](https://img.shields.io/badge/Metric-CIEDE2000-green)
 
-**Quantize.Studio** est une plateforme SaaS permettant aux professionnels de l'impression (Print-on-Demand) et du e-commerce de réduire les coûts d'encre en optimisant intelligemment les couleurs des images, sans perte visuelle perceptible.
+**ColorQuant** est une plateforme SaaS permettant aux professionnels de l'impression (Print-on-Demand) et du e-commerce de réduire les coûts d'encre en optimisant intelligemment les couleurs des images, sans perte visuelle perceptible.
 
 Ce projet est une refonte complète "Cloud-Native" d'une application legacy, passant d'un script PHP séquentiel à une architecture micro-services asynchrone en Python.
 
@@ -97,7 +97,7 @@ docker-compose up --build
 
 ---
 
-## ☁️ Stratégie de Déploiement Cloud
+## Stratégie de Déploiement Cloud
 
 Le projet est conçu pour être déployé sur **Microsoft Azure** avec une architecture **Hybrid Cloud** optimisant les coûts :
 
@@ -124,7 +124,7 @@ Cette approche permet de bénéficier de la puissance de calcul Azure tout en r�
 
 ---
 
-## 👤 Auteur
+## Auteur
 
 Projet développé par **ito.hariniaina** .
 Contact : [rak.hariniainaitokiana@gmail.com](mailto:rak.hariniainaitokiana@gmail.com)
