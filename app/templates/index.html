@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
@@ -237,7 +237,7 @@
 
           if (!response.ok) throw new Error(data.error || "Erreur serveur");
 
-          statusArea.innerHTML = `⚙️ Tâche ID: ${data.task_id} démarrée par le Worker...`;
+          statusArea.innerHTML = `Tâche ID: ${data.task_id} démarrée par le Worker...`;
 
           pollStatus(data.task_id);
         } catch (e) {
@@ -259,7 +259,7 @@
             if (data.state === "SUCCESS") {
               clearInterval(interval);
               statusArea.innerHTML =
-                '<span class="success">✅ Traitement terminé avec succès !</span>';
+                '<span class="success"> Traitement terminé avec succès !</span>';
 
               const resultUrl = data.url + "?t=" + Date.now();
 
@@ -277,7 +277,7 @@
               document.getElementById("metrics").style.display = "block";
             } else if (data.state === "FAILURE") {
               clearInterval(interval);
-              statusArea.innerHTML = `<span class="error">❌ Erreur du Worker: ${data.error}</span>`;
+              statusArea.innerHTML = `<span class="error"> Erreur du Worker: ${data.error}</span>`;
             }
           } catch (err) {
             console.error("Erreur de polling", err);

@@ -22,7 +22,7 @@ def process_image_task(self, image_path, n_colors):
         # 1. Traitement scientifique
         result_image = logic.kmeans_quantization(image_path, n_colors)
         
-        # 2. Calcul du Score de Fidélité (AJOUT ICI)
+        # 2. Calcul du Score de Fidélité 
         delta_e = logic.calculate_quality_score(image_path, result_image)
         
         # 3. Préparation pour upload
@@ -47,7 +47,7 @@ def process_image_task(self, image_path, n_colors):
         return {
             'state': 'SUCCESS',
             'url': f"http://localhost:9000/{BUCKET}/{filename}",
-            'delta_e': delta_e  # <-- On renvoie le score
+            'delta_e': delta_e  
         }
         
     except Exception as e:
